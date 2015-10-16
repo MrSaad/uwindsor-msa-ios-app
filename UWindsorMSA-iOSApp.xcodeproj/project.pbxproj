@@ -97,12 +97,9 @@
 		936A65B91BD0E2ED00D61D89 /* UWindsorMSA-iOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				936A65BA1BD0E2ED00D61D89 /* AppDelegate.swift */,
 				936A65BC1BD0E2ED00D61D89 /* ViewController.swift */,
 				936A65BE1BD0E2ED00D61D89 /* Main.storyboard */,
-				936A65C11BD0E2ED00D61D89 /* Assets.xcassets */,
-				936A65C31BD0E2ED00D61D89 /* LaunchScreen.storyboard */,
-				936A65C61BD0E2ED00D61D89 /* Info.plist */,
+				936A65E81BD0E31900D61D89 /* Supporting Files */,
 			);
 			path = "UWindsorMSA-iOSApp";
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				936A65DC1BD0E2ED00D61D89 /* Info.plist */,
 			);
 			path = "UWindsorMSA-iOSAppUITests";
+			sourceTree = "<group>";
+		};
+		936A65E81BD0E31900D61D89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				936A65BA1BD0E2ED00D61D89 /* AppDelegate.swift */,
+				936A65C11BD0E2ED00D61D89 /* Assets.xcassets */,
+				936A65C31BD0E2ED00D61D89 /* LaunchScreen.storyboard */,
+				936A65C61BD0E2ED00D61D89 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
