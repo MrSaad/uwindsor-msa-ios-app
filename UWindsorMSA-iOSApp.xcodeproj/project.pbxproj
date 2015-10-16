@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		936A65BB1BD0E2ED00D61D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65BA1BD0E2ED00D61D89 /* AppDelegate.swift */; };
-		936A65BD1BD0E2ED00D61D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65BC1BD0E2ED00D61D89 /* ViewController.swift */; };
 		936A65C01BD0E2ED00D61D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936A65BE1BD0E2ED00D61D89 /* Main.storyboard */; };
 		936A65C21BD0E2ED00D61D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936A65C11BD0E2ED00D61D89 /* Assets.xcassets */; };
 		936A65C51BD0E2ED00D61D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936A65C31BD0E2ED00D61D89 /* LaunchScreen.storyboard */; };
 		936A65D01BD0E2ED00D61D89 /* UWindsorMSA_iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65CF1BD0E2ED00D61D89 /* UWindsorMSA_iOSAppTests.swift */; };
 		936A65DB1BD0E2ED00D61D89 /* UWindsorMSA_iOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65DA1BD0E2ED00D61D89 /* UWindsorMSA_iOSAppUITests.swift */; };
+		936A65EF1BD0E79600D61D89 /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65EE1BD0E79600D61D89 /* TabsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		936A65F11BD0EA0D00D61D89 /* GColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65F01BD0EA0D00D61D89 /* GColor.swift */; settings = {ASSET_TAGS = (); }; };
+		936A65F31BD0EA3D00D61D89 /* MSAColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65F21BD0EA3D00D61D89 /* MSAColor.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		936A65B71BD0E2ED00D61D89 /* UWindsorMSA-iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UWindsorMSA-iOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936A65BA1BD0E2ED00D61D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		936A65BC1BD0E2ED00D61D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		936A65BF1BD0E2ED00D61D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		936A65C11BD0E2ED00D61D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		936A65C41BD0E2ED00D61D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		936A65D61BD0E2ED00D61D89 /* UWindsorMSA-iOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UWindsorMSA-iOSAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936A65DA1BD0E2ED00D61D89 /* UWindsorMSA_iOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWindsorMSA_iOSAppUITests.swift; sourceTree = "<group>"; };
 		936A65DC1BD0E2ED00D61D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936A65EE1BD0E79600D61D89 /* TabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
+		936A65F01BD0EA0D00D61D89 /* GColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GColor.swift; sourceTree = "<group>"; };
+		936A65F21BD0EA3D00D61D89 /* MSAColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,15 @@
 		936A65B91BD0E2ED00D61D89 /* UWindsorMSA-iOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				936A65BC1BD0E2ED00D61D89 /* ViewController.swift */,
+				936A65ED1BD0E6BC00D61D89 /* About */,
+				936A65EC1BD0E64900D61D89 /* Social Media */,
+				936A65EB1BD0E64400D61D89 /* Website */,
+				936A65EA1BD0E63E00D61D89 /* Locations */,
+				936A65E91BD0E63900D61D89 /* Timings */,
 				936A65BE1BD0E2ED00D61D89 /* Main.storyboard */,
+				936A65EE1BD0E79600D61D89 /* TabsViewController.swift */,
+				936A65F01BD0EA0D00D61D89 /* GColor.swift */,
+				936A65F21BD0EA3D00D61D89 /* MSAColor.swift */,
 				936A65E81BD0E31900D61D89 /* Supporting Files */,
 			);
 			path = "UWindsorMSA-iOSApp";
@@ -131,6 +142,41 @@
 				936A65C61BD0E2ED00D61D89 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		936A65E91BD0E63900D61D89 /* Timings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Timings;
+			sourceTree = "<group>";
+		};
+		936A65EA1BD0E63E00D61D89 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Locations;
+			sourceTree = "<group>";
+		};
+		936A65EB1BD0E64400D61D89 /* Website */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Website;
+			sourceTree = "<group>";
+		};
+		936A65EC1BD0E64900D61D89 /* Social Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Social Media";
+			sourceTree = "<group>";
+		};
+		936A65ED1BD0E6BC00D61D89 /* About */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936A65BD1BD0E2ED00D61D89 /* ViewController.swift in Sources */,
 				936A65BB1BD0E2ED00D61D89 /* AppDelegate.swift in Sources */,
+				936A65F31BD0EA3D00D61D89 /* MSAColor.swift in Sources */,
+				936A65EF1BD0E79600D61D89 /* TabsViewController.swift in Sources */,
+				936A65F11BD0EA0D00D61D89 /* GColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
