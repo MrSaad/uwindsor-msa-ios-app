@@ -20,8 +20,13 @@ class MSAColor: UIColor{
     static let navBarBackgroundColor = GColor.blue800
     static let navBarTextColor = UIColor.whiteColor()
     
+    //MARK: - Individual Screens
+    
     //timings colors
     static let timingsBackgroundColor = GColor.blue200
     static let timingsTextColor = UIColor.blackColor()
+    
+    //locations colors
+    static let locationsBackgroundColor = GColor.blue200
 
 }

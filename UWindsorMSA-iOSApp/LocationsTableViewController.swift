@@ -9,6 +9,10 @@
 import UIKit
 
 class LocationsTableViewController: UITableViewController {
+    
+    let locNames = ["Education Gym", "Multi-Faith Space (MFS)", "CEI: Engineering Building"]
+    let locLocations = ["Vanier Hall: Winclare A", "CAW: Bottom Floor", "Brothers: Rm 3010 | Sisters: Rm. 3011"]
+    let locExtraInfo = ["Jummah", "", ""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,9 @@ class LocationsTableViewController: UITableViewController {
         //set nav bar title
         self.navigationItem.title = "Locations"
         
+        //set tableview color
+        tableView.backgroundColor = MSAColor.locationsBackgroundColor
+        
         
     }
 
@@ -33,23 +40,32 @@ class LocationsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return locNames.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("locationTableCell", forIndexPath: indexPath) as! LocationsTableViewCell
+        
+        
+        cell.locName.text! = locNames[indexPath.row]
+        cell.locLocation.text! = locLocations[indexPath.row]
+        cell.locExtraInfo.text! = locExtraInfo[indexPath.row]
+        
         return cell
     }
-    */
+
+    
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 
 }

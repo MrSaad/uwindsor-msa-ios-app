@@ -30,7 +30,6 @@ class TimingsTableViewController: UITableViewController {
         if let path = NSBundle.mainBundle().pathForResource("prayer_data", ofType: "json") {
             if let data = NSData(contentsOfFile: path) {
                 let json = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)
-                print(json["timings"]["01.01.15"]["fajr"]["iqama"])
             }
         }
         
