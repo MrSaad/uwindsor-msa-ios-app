@@ -19,8 +19,8 @@
                         <segue destination="wBi-de-FLe" kind="relationship" relationship="viewControllers" id="19X-Vj-IuJ"/>
                         <segue destination="RHX-xo-Xuq" kind="relationship" relationship="viewControllers" id="flf-zC-qRg"/>
                         <segue destination="i89-rm-08Q" kind="relationship" relationship="viewControllers" id="iOg-JR-pXx"/>
-                        <segue destination="i4z-go-35C" kind="relationship" relationship="viewControllers" id="bNR-bA-FNh"/>
-                        <segue destination="Q5p-ew-BfB" kind="relationship" relationship="viewControllers" id="eqs-kg-gfz"/>
+                        <segue destination="frC-7G-4g6" kind="relationship" relationship="viewControllers" id="bNR-bA-FNh"/>
+                        <segue destination="dTm-Fz-zF1" kind="relationship" relationship="viewControllers" id="eqs-kg-gfz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Onb-Kf-zFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -196,21 +196,21 @@
             </objects>
             <point key="canvasLocation" x="1538" y="-1421"/>
         </scene>
-        <!--Social Media-->
+        <!--Social Media Table View Controller-->
         <scene sceneID="iHr-pW-ZxO">
             <objects>
-                <tableViewController id="i4z-go-35C" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nii-UH-FJC">
+                <tableViewController id="i4z-go-35C" customClass="SocialMediaTableViewController" customModule="UWindsorMSA_iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="nii-UH-FJC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kud-XD-GFN">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kud-XD-GFN" id="OiG-PO-Olc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -222,18 +222,16 @@
                             <outlet property="delegate" destination="i4z-go-35C" id="qrs-3u-dHr"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Social Media" image="ic_people_36pt" id="DV5-VS-E9B">
-                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="BWC-xv-Ok4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xtN-LJ-wY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="1008"/>
+            <point key="canvasLocation" x="1538" y="1008"/>
         </scene>
-        <!--About-->
+        <!--About View Controller-->
         <scene sceneID="aRj-gi-T60">
             <objects>
-                <viewController id="Q5p-ew-BfB" sceneMemberID="viewController">
+                <viewController id="Q5p-ew-BfB" customClass="AboutViewController" customModule="UWindsorMSA_iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Nb-M6-jsS"/>
                         <viewControllerLayoutGuide type="bottom" id="NfL-60-yPd"/>
@@ -244,13 +242,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="ic_info_outline_36pt" id="pek-Vm-82d">
-                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="Pdr-Sm-sjB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzj-bI-OdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="1804"/>
+            <point key="canvasLocation" x="1538" y="1804"/>
         </scene>
         <!--Timings-->
         <scene sceneID="eQX-MD-ZcW">
@@ -315,6 +311,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7X-Fg-eje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="726" y="-1421"/>
+        </scene>
+        <!--Social Media-->
+        <scene sceneID="gmf-aL-rMb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="frC-7G-4g6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Social Media" image="ic_people_36pt" id="DV5-VS-E9B">
+                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Lg-Tz-LyG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i4z-go-35C" kind="relationship" relationship="rootViewController" id="5zg-Rv-nxR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzC-dK-f8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="1008"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="QEf-YJ-5GJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dTm-Fz-zF1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="ic_info_outline_36pt" id="pek-Vm-82d">
+                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qn1-xB-1Zr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q5p-ew-BfB" kind="relationship" relationship="rootViewController" id="1NQ-lL-lgx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLR-pT-k8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="1804"/>
         </scene>
     </scenes>
     <resources>

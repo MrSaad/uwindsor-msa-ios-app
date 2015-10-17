@@ -17,12 +17,13 @@
 		936A65F11BD0EA0D00D61D89 /* GColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65F01BD0EA0D00D61D89 /* GColor.swift */; settings = {ASSET_TAGS = (); }; };
 		936A65F31BD0EA3D00D61D89 /* MSAColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A65F21BD0EA3D00D61D89 /* MSAColor.swift */; settings = {ASSET_TAGS = (); }; };
 		9387D0A11BD1E22B00D2F49C /* TimingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D0A01BD1E22B00D2F49C /* TimingsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9387D0A71BD1EA0300D2F49C /* PrayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D0A61BD1EA0300D2F49C /* PrayerType.swift */; settings = {ASSET_TAGS = (); }; };
 		9387D0A91BD20A2400D2F49C /* prayer_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9387D0A81BD20A2400D2F49C /* prayer_data.json */; settings = {ASSET_TAGS = (); }; };
 		9387D0AB1BD21A8E00D2F49C /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D0AA1BD21A8E00D2F49C /* LocationsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9387D0AD1BD220F700D2F49C /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D0AC1BD220F700D2F49C /* LocationsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9387D0AF1BD226C500D2F49C /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D0AE1BD226C500D2F49C /* WebsiteViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9387D0B11BD235D400D2F49C /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9387D0B01BD235D400D2F49C /* fontawesome-webfont.ttf */; settings = {ASSET_TAGS = (); }; };
+		9387D0B31BD23C9A00D2F49C /* SocialMediaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D0B21BD23C9A00D2F49C /* SocialMediaTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9387D0B51BD23E5E00D2F49C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D0B41BD23E5E00D2F49C /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D5A75816B6A2F1E59BA2D1FE /* Pods_UWindsorMSA_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D47F7874A13986AAE2A5338 /* Pods_UWindsorMSA_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,12 +64,13 @@
 		936A65F01BD0EA0D00D61D89 /* GColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GColor.swift; sourceTree = "<group>"; };
 		936A65F21BD0EA3D00D61D89 /* MSAColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAColor.swift; sourceTree = "<group>"; };
 		9387D0A01BD1E22B00D2F49C /* TimingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingsTableViewController.swift; sourceTree = "<group>"; };
-		9387D0A61BD1EA0300D2F49C /* PrayerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerType.swift; sourceTree = "<group>"; };
 		9387D0A81BD20A2400D2F49C /* prayer_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prayer_data.json; sourceTree = "<group>"; };
 		9387D0AA1BD21A8E00D2F49C /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		9387D0AC1BD220F700D2F49C /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
 		9387D0AE1BD226C500D2F49C /* WebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 		9387D0B01BD235D400D2F49C /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		9387D0B21BD23C9A00D2F49C /* SocialMediaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaTableViewController.swift; sourceTree = "<group>"; };
+		9387D0B41BD23E5E00D2F49C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +190,6 @@
 			children = (
 				9387D0A81BD20A2400D2F49C /* prayer_data.json */,
 				9387D0A01BD1E22B00D2F49C /* TimingsTableViewController.swift */,
-				9387D0A61BD1EA0300D2F49C /* PrayerType.swift */,
 			);
 			name = Timings;
 			sourceTree = "<group>";
@@ -213,6 +214,7 @@
 		936A65EC1BD0E64900D61D89 /* Social Media */ = {
 			isa = PBXGroup;
 			children = (
+				9387D0B21BD23C9A00D2F49C /* SocialMediaTableViewController.swift */,
 			);
 			name = "Social Media";
 			sourceTree = "<group>";
@@ -220,6 +222,7 @@
 		936A65ED1BD0E6BC00D61D89 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				9387D0B41BD23E5E00D2F49C /* AboutViewController.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -407,14 +410,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9387D0A71BD1EA0300D2F49C /* PrayerType.swift in Sources */,
 				936A65BB1BD0E2ED00D61D89 /* AppDelegate.swift in Sources */,
 				936A65F31BD0EA3D00D61D89 /* MSAColor.swift in Sources */,
 				936A65EF1BD0E79600D61D89 /* TabsViewController.swift in Sources */,
 				9387D0AF1BD226C500D2F49C /* WebsiteViewController.swift in Sources */,
+				9387D0B31BD23C9A00D2F49C /* SocialMediaTableViewController.swift in Sources */,
 				9387D0A11BD1E22B00D2F49C /* TimingsTableViewController.swift in Sources */,
 				936A65F11BD0EA0D00D61D89 /* GColor.swift in Sources */,
 				9387D0AD1BD220F700D2F49C /* LocationsTableViewCell.swift in Sources */,
+				9387D0B51BD23E5E00D2F49C /* AboutViewController.swift in Sources */,
 				9387D0AB1BD21A8E00D2F49C /* LocationsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

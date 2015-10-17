@@ -28,5 +28,10 @@ class MSAColor: UIColor{
     
     //locations colors
     static let locationsBackgroundColor = GColor.blue200
-
+    
+    //social media colors
+    static let socialMediaBackgroundColor = GColor.blue200
+    
+    //about colors
+    static let aboutBackgroundColor = UIColor.whiteColor()
 }
