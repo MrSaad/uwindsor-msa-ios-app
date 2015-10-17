@@ -12,8 +12,16 @@ import UIKit
 class MSAColor: UIColor{
     
     //tab bar colours
-    static var tabBarBackgroundColor = GColor.blue800
-    static var tabBarItemNormalColor = GColor.grey500
-    static var tabBarItemSelectedColor = UIColor.whiteColor()
+    static let tabBarBackgroundColor = GColor.blue800
+    static let tabBarItemNormalColor = GColor.grey500
+    static let tabBarItemSelectedColor = UIColor.whiteColor()
+    
+    //navigation bar colours
+    static let navBarBackgroundColor = GColor.blue800
+    static let navBarTextColor = UIColor.whiteColor()
+    
+    //timings colors
+    static let timingsBackgroundColor = GColor.blue200
+    static let timingsTextColor = UIColor.blackColor()
 
 }

@@ -16,8 +16,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="ISc-xW-TQB" kind="relationship" relationship="viewControllers" id="19X-Vj-IuJ"/>
-                        <segue destination="cqk-cJ-fuh" kind="relationship" relationship="viewControllers" id="flf-zC-qRg"/>
-                        <segue destination="Eta-qr-7s4" kind="relationship" relationship="viewControllers" id="iOg-JR-pXx"/>
+                        <segue destination="RHX-xo-Xuq" kind="relationship" relationship="viewControllers" id="flf-zC-qRg"/>
+                        <segue destination="i89-rm-08Q" kind="relationship" relationship="viewControllers" id="iOg-JR-pXx"/>
                         <segue destination="i4z-go-35C" kind="relationship" relationship="viewControllers" id="bNR-bA-FNh"/>
                         <segue destination="Q5p-ew-BfB" kind="relationship" relationship="viewControllers" id="eqs-kg-gfz"/>
                     </connections>
@@ -26,21 +26,21 @@
             </objects>
             <point key="canvasLocation" x="-182" y="209"/>
         </scene>
-        <!--Timings-->
+        <!--Prayer Timings-->
         <scene sceneID="dAg-SN-6Jo">
             <objects>
-                <tableViewController id="Eta-qr-7s4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="AHN-mz-HGS">
+                <tableViewController id="Eta-qr-7s4" customClass="TimingsTableViewController" customModule="UWindsorMSA_iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" id="AHN-mz-HGS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IP0-bI-mfs">
-                                <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="IP0-bI-mfs">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IP0-bI-mfs" id="Hsv-cP-VAA">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -52,16 +52,16 @@
                             <outlet property="delegate" destination="Eta-qr-7s4" id="rHN-qE-twR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Timings" image="ic_access_time_36pt" id="DGg-og-8Od"/>
+                    <navigationItem key="navigationItem" title="Prayer Timings" id="qzb-cQ-W8w"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPX-6W-9zY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="191"/>
+            <point key="canvasLocation" x="1505" y="191"/>
         </scene>
-        <!--Locations-->
+        <!--Locations Table View Controller-->
         <scene sceneID="HOt-ai-NOE">
             <objects>
-                <tableViewController id="cqk-cJ-fuh" sceneMemberID="viewController">
+                <tableViewController id="cqk-cJ-fuh" customClass="LocationsTableViewController" customModule="UWindsorMSA_iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XUp-tn-WJ5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +69,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="awr-Rf-7tN">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="awr-Rf-7tN" id="itl-zz-4cm">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -84,13 +84,11 @@
                             <outlet property="delegate" destination="cqk-cJ-fuh" id="BUp-c0-QE8"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Locations" image="ic_location_on_36pt" id="O2c-Rf-JFw">
-                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="1wW-a4-uiv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hwt-Ki-1he" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="-655"/>
+            <point key="canvasLocation" x="1538" y="-655"/>
         </scene>
         <!--Website-->
         <scene sceneID="ITK-Lj-Tcc">
@@ -169,6 +167,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzj-bI-OdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="726" y="1804"/>
+        </scene>
+        <!--Timings-->
+        <scene sceneID="eQX-MD-ZcW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i89-rm-08Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Timings" image="ic_access_time_36pt" id="DGg-og-8Od"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xrC-6Q-PWd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eta-qr-7s4" kind="relationship" relationship="rootViewController" id="ska-zS-CT4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29F-w8-KJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="191"/>
+        </scene>
+        <!--Locations-->
+        <scene sceneID="H7S-Ja-bzS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RHX-xo-Xuq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Locations" image="ic_location_on_36pt" id="O2c-Rf-JFw">
+                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XvU-bu-6CY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cqk-cJ-fuh" kind="relationship" relationship="rootViewController" id="sWA-a0-PqF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bw5-oe-8ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="-655"/>
         </scene>
     </scenes>
     <resources>
