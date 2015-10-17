@@ -25,7 +25,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Onb-Kf-zFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-182" y="209"/>
+            <point key="canvasLocation" x="-452" y="191"/>
         </scene>
         <!--Prayer Timings-->
         <scene sceneID="dAg-SN-6Jo">
@@ -239,10 +239,43 @@
                     <view key="view" contentMode="scaleToFill" id="XNU-qC-EO3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Statement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gl8-3o-rpf">
+                                <rect key="frame" x="229" y="114" width="142" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-36-WEd">
+                                <rect key="frame" x="36" y="165.5" width="528" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1YU-36-WEd" firstAttribute="top" secondItem="Gl8-3o-rpf" secondAttribute="bottom" constant="31" id="KeI-px-d9E"/>
+                            <constraint firstItem="Gl8-3o-rpf" firstAttribute="top" secondItem="1Nb-M6-jsS" secondAttribute="bottom" constant="50" id="Ly9-6W-Hk0"/>
+                            <constraint firstItem="Gl8-3o-rpf" firstAttribute="leading" secondItem="XNU-qC-EO3" secondAttribute="leadingMargin" constant="14" id="Mj7-35-Inp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1YU-36-WEd" secondAttribute="trailing" constant="16" id="XU2-7n-jY1"/>
+                            <constraint firstItem="Gl8-3o-rpf" firstAttribute="centerX" secondItem="XNU-qC-EO3" secondAttribute="centerX" id="gmn-4g-uVc"/>
+                            <constraint firstItem="1YU-36-WEd" firstAttribute="leading" secondItem="XNU-qC-EO3" secondAttribute="leadingMargin" constant="16" id="xx0-Fa-kaE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mj7-35-Inp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Pdr-Sm-sjB"/>
+                    <connections>
+                        <outlet property="aboutDesc" destination="1YU-36-WEd" id="asn-xx-Ze5"/>
+                        <outlet property="aboutTitle" destination="Gl8-3o-rpf" id="GGx-qi-Zbl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzj-bI-OdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
